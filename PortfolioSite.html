@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html  lang="en">
+<title>Developers Portfolio</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="C:\Users\avs12\OneDrive\Documents\School\Udemy 2020-2022\HTML\MyPortfolioWebpage/assets/css/PortfolioStylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  
+
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">Audrey</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+</nav>
+<script>
+    // add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+
+
+window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+</script>
+<style>
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+</style>
+</head>
+
+<body>
+ <!-- main banner -->
+ <section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Welcome, I am the Developer</h2>
+            <p class="hero_desc">I am a professional freelancer available Nationwide </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('C:/Users/avs12/OneDrive/Images/spaceEarth.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+</style>
+
+
+<!-- about section-->
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="C:/Users/avs12/OneDrive/Images/dataViz2.jpg" class= "imageAboutPage" alt="">
+            </div>
+
+
+            <div class="col-lg-8">
+                <p> 
+                   Seven years of consulting experience with specialties in SPO, Power Platform, Front-end Web Development, Process Improvement, 
+                   Business Analysis, Data Analysis, and Data Visualization. 
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Name: Audrey Schmitt</li>
+                            <li>Age: 31</li>
+                            <li>Occupation: Web Developer</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Education: MS </li>
+                            <li>Experience: 7</li>
+                            <li>Second Occupation: SPO & Power Platform Developer</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+<style>
+    /* about section image css */
+      .imageAboutPage {
+      width: 100%;
+    }
+</style>
+<!-- services section-->
+<section id="services">
+    <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Front-end web development using HTML5, CSS3, and JS.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Custom web design using CSS3.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Simple web deployment projects, learning web deployment.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">Visual Analytics</h4>
+                        <p class="card-text mt-3">Interactive Dashboards for EDA and for decision-making using Power BI.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">DevOps</h4>
+                        <p class="card-text mt-3">Implementing DevOps in Power Platform Builds for collaboration, fast feedback, and iterative improvements.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">Quality assurance checks for SharePoint Online Sites, Power Automate Flows, PowerApps Applications, and for UI/UX.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+</style>
+<br>
+<br>
+<br>
+<!-- portfolio section-->
+<section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/computerInside.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Web Design</h4>
+                        <p class="card-text">Website and web app design using HTML, CSS, and web components.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/codingImg.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Food Order App</h4>
+                        <p class="card-text">A food order web application for the restaurant industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/dataViz.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Landing Page</h4>
+                        <p class="card-text">A landing webpage with a modern design for a website with multiple pages.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/appImg2.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">WordPress Plugin</h4>
+                        <p class="card-text">Custom WordPress Plugin Development Using PHP.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/workDevices2.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">SPO Website Administration</h4>
+                        <p class="card-text">Designated SCA for a collection of SharePoint Online sites.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="C:/Users/avs12/OneDrive/Images/dataVizSW.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Routing App</h4>
+                        <p class="card-text">A PowerApps application to route memos, forms, data calls, and other important review processes.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<br>
+<br>
+<br>
+<section id="secondSection">
+    <!--Column Cards-->
+    <h1 class="text-center">Offerings</h1>
+    <br>
+    <br>
+        <div class="row">
+          <div class="column">
+            <div class="card">Power Platform</div>
+          </div>
+          <div class="column">
+            <div class="card">ML for Data Science</div>
+          </div>
+          <div class="column">
+            <div class="card">Predictive Analytics</div>
+          </div>
+          <div class="column">
+            <div class="card">Website Design</div>
+          </div>
+        </div>
+      </section>
+
+
+<style>
+    /*Column Cards Style*/
+* {
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+   
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+   
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+   
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+<br>
+<section id="middleSection">
+    <!--Article-->
+<article>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>Article Heading</h3>
+<p id="ArticleText">Article - describe mission and values in the technology </p>
+<p id="ArticleText">More Article content goes here - More on describe our mission and values in our technology
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    Description here
+   Further descriptive content here
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</article>
+ <style>
+  h3{color:rgb(149, 233, 248)}
+  h3{text-align: center;}
+  #ArticleText{color: rgb(255, 255, 255);}
+  #ArticleText{text-align: center;}
+    #middleSection{background-image: url("C:/Users/avs12/OneDrive/Images/darkSNA.jpg");}
+    #middleSection{background-repeat: no-repeat;}
+    #middleSection{background-attachment: fixed;}
+    #middleSection{background-size: 100% 100%;}
+</style>
+</section>
+<br>
+<br>
+<div class="w3-center">
+<div class="w3-container">
+    <div class="w3-panel w3-card w3-yellow"><p><b>Client Workshops</b></p></div>
+    <div class="w3-panel w3-card-2 w3-yellow"><p><b>Demos and Showcases</b></p></div>
+    <div class="w3-panel w3-card-4 w3-yellow"><p><b>Instructional Walk-Throughs</b></p></div>
+  </div>
+</div>
+<br>
+<br>
+<!-- HTML for Responsive Tiles -->
+<section id="RespTiles">
+<div class="container">
+    <section class="cms-boxes">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 cms-boxes-outer">
+            <div class="cms-boxes-items cms-features">
+              <div class="boxes-align">
+                <div class="small-box">
+                  <i class="fa fa-4x fa-laptop">&nbsp;</i>
+                  <h2>Data Management</h2>
+                  <p>Gain valuable insights with Data  Management Practices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 cms-boxes-outer">
+            <div class="cms-boxes-items cms-security">
+              <div class="boxes-align">
+                <div class="small-box">
+                  <i class="fa fa-4x fa-cog">&nbsp;</i>
+                  <h2>Enterprise<br> Data Funnel</h2>
+                  <p>Pull in realtime data from every source on the web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 cms-boxes-outer">
+            <div class="cms-boxes-items cms-scalability">
+              <div class="boxes-align">
+                <div class="small-box">
+                  <i class="fa fa-4x fa-arrows-alt" aria-hidden="true"></i>
+                  <h2>Pattern Analysis</h2>
+                  <p>Advanced algorithms for better analysis of your data.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 cms-boxes-outer">
+            <div class="cms-boxes-items cms-built">
+              <div class="boxes-align">
+                <div class="large-box">
+                  <i class="fa fa-4x fa-heart" aria-hidden="true"></i>
+                  <h2>Award-winning customer service</h2>
+                  <p>Award-winning, U.S. based support 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 cms-boxes-outer">
+            <div class="cms-boxes-items cms-documentation">
+              <div class="boxes-align">
+                <div class="large-box">
+                  <i class="fa fa-4x fa-file-code-o">&nbsp;</i>
+                  <h2>Documentation</h2>
+                  <p>From connecting data sources to styling reports, we have everything you need to get the most value</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<br>
+<br>
+<br>
+  <br>
+<section id="middleSection2">
+    <!--Article-->
+<article>
+<br>
+<br>
+<br>
+<h3 id="secondArticle">Article Heading</h3>
+<p id="ArticleText">Article - view recent customer feedback </p>
+<p id="ArticleText">More Article content goes here - More on describe our mission and values in our technology
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    Description here
+   Further descriptive content here
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</article>
+ <style>
+  #secondArticle{color:rgb(241, 233, 12)}
+  #secondArticle{text-align: center;}
+  #ArticleText{color: rgb(255, 255, 255);}
+  #ArticleText{text-align: center;}
+    #middleSection2{background-image: url("C:/Users/avs12/OneDrive/Images/MeshBackground.png");}
+    #middleSection2{background-repeat: no-repeat;}
+    #middleSection2{background-attachment: fixed;}
+    #middleSection2{background-size: 100% 100%;}
+</style>
+</section>
+<br>
+<br>
+<section id="Offerings" class="center-block">
+    <table width="100%" cellspacing="5" cellpadding="1">
+        <tr>
+            <td>
+                <table cellspacing="5" cellpadding="3">
+                    <tr>
+                        <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Formula-based Web Apps                            
+                            </a>
+                        </td>
+     
+          <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Data Analytics & Dashboards                              
+                            </a>
+                        </td>
+     
+            <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Custom Graphic Design                              
+                            </a>
+                        </td>
+                <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Process Automation                            
+                            </a>
+                        </td>
+                <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Creative Web Design                            
+                            </a>
+                        </td>
+                <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Modern Data Management                          
+                            </a>
+                        </td>
+                <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Easy-to-Customize APIs                          
+                            </a>
+                        </td>
+                <td style="border-radius: 5px;" bgcolor="#00008b">
+                            <a href="https://google.com" target="_blank" style="padding: 8px 12px; font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">Modernizing Business                          
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      </table>
+      </section>
+<div class="w3-center">
+<div class="w3-container w3-xlarge">
+    <div class="w3-panel w3-border w3-black w3-hover-text-blue">
+    <p><b>Additional Capabilities</b></p>
+    </div>
+    <button class="w3-btn w3-border w3-hover-text-blue" onclick="window.location.href='https://www.google.com';">Click Here for More</button>
+  </div>
+</div>
+<br><br>
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+  <style>
+    /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+  </style>
+<br>
+<br>
+<br>
+<div class="w3-center">
+<div class="center-block">
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="C:/Users/avs12/OneDrive/Images/avatarOrange.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Contact Here</h1>
+        <p>Data Architect & Web Developer</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
+          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+          <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+        </svg></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <style>
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- contact section-->
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+               
+            </div>
+
+
+        </div>
+    </div>
+</section>
+</body>
+<br>
+ <!-- footer section-->
+ <footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </div>
+</footer>
+<style>
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+</style>
+
+<!-- Scripts -->
+<script src="assets/js/PortfolioJS.js"></script>
+
+</html>
